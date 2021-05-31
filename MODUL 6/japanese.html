@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleee.css">
+    <script src="https://kit.fontawesome.com/a64e18c57f.js" crossorigin="anonymous"></script>
+    <title>Japanese Food</title>
+</head>
+<body>
+    <!-- navbar -->
+    <ul>
+        <li><a href="Landing Page.html">Home</a></li>
+        <li><a class="fas fa-fish" href="japanese.html"> Japanese Food </a></li>
+        <li><a class="fas fa-drumstick-bite" href="korean.html"> Korean Food</a></li>
+        <li><a class="fas fa-pizza-slice" href="italian.html"> Italian Food</a></li>
+        <li><a  class="fas fa-id-card" href="contact.html"> Contact Person</a></li>
+    </ul>
+<!-- accordion -->
+<h1>Japanese Food</h1>
+<button class="accordion">Breakfast Menu</button>
+<div class="panel">
+    <ul1>
+        <li1><a href="#Yakizakana">Yakizakana</a></li>
+        <li1><a href="#Sup Miso">Sup Miso</a></li>
+        <li1><a href="#Natto">Natto</a></li>
+        <li1><a href="#Tamagoyaki">Tamagoyaki</a></li>
+    </ul1>
+</div>
+
+<button class="accordion">Lunch Menu</button>
+<div class="panel">
+    <ul1>
+        <li1><a href="#Mie Ramen">Mie Ramen</a></li>
+        <li1><a href="#Sushi">Sushi</a></li>
+        <li1><a href="#Sukiyaki">Sukiyaki</a></li>
+        <li1><a href="#Nasi Kari">Nasi Kari</a></li>
+    </ul1>
+</div>
+
+<button class="accordion">Dinner Menu</button>
+<div class="panel">
+    <ul1>
+        <li1><a href="#Tonkatsu">Tonkatsu</a></li>
+        <li1><a href="#Soba">Soba</a></li>
+        <li1><a href="#Udon">Udon</a></li>
+        <li1><a href="#Karage">Karage</a></li>
+    </ul1>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+    panel.style.display = "none";
+    } else {
+    panel.style.display = "block";
+    }
+    });
+}
+</script>
+</body>
+</html>
